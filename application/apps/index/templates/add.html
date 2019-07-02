@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+            <div class="col">
+                <form class="form-login" action="http://127.0.0.1:5000/add" method="post">
+
+                  <h3 class="text-center">学生信息提交</h3>
+                      <input id="csr-token" name="csr_token" type="hidden" value="{{ csrf_token() }}">
+
+                    <div class="form-group">用户名
+                      <input name="username">
+                    </div>
+                    <div class="form-group">年龄
+                      <input name="age">
+                    </div>
+
+                    <div class="form-group">性别
+                      <input name="sex">
+                    </div>
+
+                    <div class="form-group">所在年级
+                      <input name="class_number">
+                    </div>
+
+                    <div class="form-group">描述信息
+                      <input name="description">
+                    </div>
+
+                  <div>
+                      <button type="submit" class="btn">提交</button>
+                  </div>
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>
